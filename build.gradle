@@ -39,8 +39,7 @@ repositories {
     final def GithubPackages = [
         ["fnuecke/ceres", "li.cil.ceres"],
         ["Hashbeep-Industries/sedna", "me.hashbeep.sedna"],
-        ["Hashbeep-Industries/buildroot", "me.hashbeep.sedna"],
-        ["fnuecke/buildroot", "li.cil.sedna"]
+        ["Hashbeep-Industries/buildroot", "me.hashbeep.sedna"]
     ]
     GithubPackages.each { final repo, final group ->
         maven {
@@ -60,7 +59,6 @@ dependencies {
     implementation('li.cil.ceres:ceres:0.0.4') { transitive = false }
     implementation('me.hashbeep.sedna:sedna:0.0.1') { transitive = false }
     implementation('me.hashbeep.sedna:sedna-buildroot:0.0.1') { transitive = false }
-    implementation('li.cil.sedna:sedna-buildroot:0.0.8')
 }
 
 minecraft {
@@ -90,7 +88,6 @@ shadowJar {
         include(dependency('li.cil.ceres:ceres:.*'))
         include(dependency('me.hashbeep.sedna:sedna:.*'))
         include(dependency('me.hashbeep.sedna:sedna-buildroot:.*'))
-        include(dependency('li.cil.sedna:sedna-buildroot:.*'))
     }
 
     archiveClassifier.set('')
