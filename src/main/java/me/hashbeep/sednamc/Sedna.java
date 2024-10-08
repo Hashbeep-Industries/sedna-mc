@@ -1,4 +1,4 @@
-package li.cil.sednamc;
+package me.hashbeep.sednamc;
 
 import net.minecraftforge.fml.common.Mod;
 
