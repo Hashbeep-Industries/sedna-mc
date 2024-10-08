@@ -50,13 +50,13 @@ jobs:
         with:
           asset_paths: '["./build/libs/*.jar"]'
 
-      - name: Publish (Forge)
-        uses: Kir-Antipov/mc-publish@v3
-        with:
-          name: ${{ github.event.repository.name }}-MC${{ steps.split_tag.outputs.mc_version }}-${{ steps.split_tag.outputs.mod_version }}
-          version: MC${{ steps.split_tag.outputs.mc_version }}-forge-${{ steps.split_tag.outputs.mod_version }}
-          java: Java 17
+#      - name: Publish (Forge)
+#        uses: Kir-Antipov/mc-publish@v3
+#        with:
+#          name: ${{ github.event.repository.name }}-MC${{ steps.split_tag.outputs.mc_version }}-${{ steps.split_tag.outputs.mod_version }}
+#          version: MC${{ steps.split_tag.outputs.mc_version }}-forge-${{ steps.split_tag.outputs.mod_version }}
+#          java: Java 17
 
-          files: build/libs/*.jar
+#          files: build/libs/*.jar
 
-          curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
+#          curseforge-token: ${{ secrets.CURSEFORGE_API_KEY }}
